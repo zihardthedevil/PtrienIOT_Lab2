@@ -4,19 +4,19 @@
 
 // Cấu hình cảm biến DHT11
 #define DHTPIN 14
-#define DHTTYPE DHT22
+#define DHTTYPE DHT11
 DHT dht(DHTPIN, DHTTYPE);
 
 // Thông tin WiFi  
-const char* ssid = "Lam Dien";
-const char* password = "lam123456789";
+const char* ssid = "";
+const char* password = "";
 
 // Thông tin MQTT Core IoT
 const char* mqtt_server = "app.coreiot.io";
 const int mqtt_port = 1883; 
 
 // Access Token của thiết bị
-const char* access_token = "wdvw6flumdfl828ytajc"; 
+const char* access_token = ""; 
 
 // WiFi & MQTT Client
 WiFiClient espClient;
